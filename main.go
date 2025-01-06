@@ -63,6 +63,7 @@ func main() {
 					fmt.Printf("Email sent with attachment: %s\n", event.Name)
 				}
 			}
+			time.Sleep(20 * time.Second)
 		case err := <-watcher.Errors:
 			log.Println("Watcher error:", err)
 		}
