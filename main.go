@@ -33,7 +33,7 @@ func sendEmailWithAttachment(filePath string) error {
 }
 
 func main() {
-	dirToWatch := os.Getenv("WATCH_DIR")
+	dirToWatch := os.Getenv("/books")
 
 	watcher, err := fsnotify.NewWatcher()
 	if err != nil {
